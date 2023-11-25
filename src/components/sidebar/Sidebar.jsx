@@ -3,7 +3,7 @@ import profileimage from "../../assets/emplyeeimg.png"
 const Sidebar = () => {
 
   const handleEmplyeelist = () =>{
-    
+
   }
   return (
     <div className="bg-primary h-screen">
@@ -18,7 +18,7 @@ const Sidebar = () => {
       </div>
       <div className="menu  py-6">
         <ul>
-          <li onClick={handleEmplyeelist} className="py-3 text-white hover:bg-secondary px-5">Emplyee List</li>
+          <li  className="py-3 text-white hover:bg-secondary px-5">Emplyee List</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Today’s Class</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Post Activity</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Activity List</li>

@@ -42,9 +42,9 @@ const Home = () => {
       </div>
       <div className="menu  py-6">
         <ul>
-          <li onClick={handleEmplyeelist} className="py-3 text-white hover:bg-secondary px-5">Emplyee List</li>
-          <li onClick={handleTodayClass} className="py-3 text-white hover:bg-secondary px-5 ">Today’s Class</li>
-          <li onClick={handlePostActivity} className="py-3 text-white hover:bg-secondary px-5">Post Activity</li>
+          <li onClick={handleEmplyeelist} className={`py-3 text-white hover:bg-secondary px-5 ${emplyeelist ? 'bg-secondary': null}`}>Emplyee List</li>
+          <li onClick={handleTodayClass} className={`py-3 text-white hover:bg-secondary px-5 ${todayclass ? 'bg-secondary': null}`}>Today’s Class</li>
+          <li onClick={handlePostActivity} className={`py-3 text-white hover:bg-secondary px-5 ${postActivity ? 'bg-secondary': null}`}>Post Activity</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Activity List</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Apply for Leave</li>
           <li className="py-3 text-white hover:bg-secondary px-5">Late List</li>
@@ -56,9 +56,6 @@ const Home = () => {
         {emplyeelist && <EmplyeeList />}
         {todayclass && <TodayClass />}
         {postActivity && <PostActivity />}
-       
-       
-        
       </div>
     </div>
   )
