@@ -52,7 +52,7 @@ const Home = () => {
       </div>
     </div>
       </div>
-      <div className="w-1/5">
+      <div className="w-4/5">
         {emplyeelist && <EmplyeeList />}
         {todayclass && <TodayClass />}
         {postActivity && <PostActivity />}
